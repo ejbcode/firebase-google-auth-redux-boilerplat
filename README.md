@@ -2,33 +2,34 @@
 
 ## Structure
 
-📦src
-┣ 📂component
-┃ ┣ 📂authUI
-┃ ┃ ┣ 📜Login.js
-┃ ┃ ┣ 📜NotFound.js
-┃ ┃ ┗ 📜Register.js
-┃ ┗ 📂main
-┃ ┃ ┗ 📜Main.js
-┣ 📂firebase
-┃ ┗ 📜firebaseConfig.js
-┣ 📂hooks
-┃ ┗ 📜useForm.js
-┣ 📂redux
-┃ ┣ 📂actions
-┃ ┃ ┗ 📜authAction.js
-┃ ┣ 📂reducers
-┃ ┃ ┗ 📜authReducer.js
-┃ ┣ 📂types
-┃ ┃ ┗ 📜types.js
-┃ ┗ 📜store.js
-┣ 📂routes
-┃ ┣ 📜AppRoute.js
-┃ ┣ 📜PrivateRoute.js
-┃ ┗ 📜PublicRoute.js
-┣ 📜App.js
-┣ 📜index.js
-┗ 📜setupTests.js
+src
+┣ component
+┃ ┣ authUI
+┃ ┃ ┣ Login.js
+┃ ┃ ┣ NotFound.js
+┃ ┃ ┗ Register.js
+┃ ┗ main
+┃ ┃ ┗ Main.js
+┣ firebase
+┃ ┗ firebaseConfig.js
+┣ hooks
+┃ ┗ useForm.js
+┣ redux
+┃ ┣ actions
+┃ ┃ ┗ authAction.js
+┃ ┣ reducers
+┃ ┃ ┗ authReducer.js
+┃ ┣ types
+┃ ┃ ┗ types.js
+┃ ┗ store.js
+┣ routes
+┃ ┣ AppRoute.js
+┃ ┣ AuthRouter.js
+┃ ┣ PrivateRoute.js
+┃ ┗ PublicRoute.js
+┣ App.js
+┣ index.js
+┗ setupTests.js
 
 ## Firebase Config
 
