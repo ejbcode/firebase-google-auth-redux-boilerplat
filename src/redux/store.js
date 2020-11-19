@@ -1,18 +1,16 @@
-import { combineReducers, createStore } from "redux";
-import { contadorReducer } from "./reducers/contadorReducer";
-import { loginReducer } from "./reducers/loginReducer";
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import { authReducer } from './reducers/authReducer';
 
-const devTool =
-  typeof window === "object" &&
-  typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== "undefined"
-    ? window.__REDUX_DEVTOOLS_EXTENSION__()
-    : (f) => f;
+const composeEnhancers =
+  (typeof window !== 'undefined' &&
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  compose;
 
 const reducers = combineReducers({
-  contador: contadorReducer,
-  login: loginReducer,
-})
+  auth: authReducer,
+});
 
-const store = createStore(reducers, devTool);
+const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
 
 export default store;
