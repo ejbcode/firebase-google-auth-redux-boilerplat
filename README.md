@@ -2,6 +2,8 @@
 
 ## Structure
 
+todo
+
 ## Firebase Config
 
 Login https://firebase.google.com/,
